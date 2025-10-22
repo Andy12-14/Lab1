@@ -31,11 +31,11 @@ def test_multiply_normal_cases():
 
 def test_multiply_edge_cases():
     assert multiply(7) == 7
-    assert multiply() == 1 # 1 is the typical result for an empty product
+    assert multiply() == 1 
     assert multiply(1.5, 2) == 3.0
 
 def test_divide_normal_cases():
-    assert divide(10, 2, 5) == 1  # 10 / 2 / 5
+    assert divide(10, 2, 5) == 1  
     assert divide(100, 10) == 10.0
 
 def test_divide_edge_cases():
