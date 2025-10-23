@@ -22,14 +22,16 @@ def multiply(*numbers):
     return P 
 
 def divide(*numbers):
-    """divide an unlimted number of parameters"""
-    L=list(numbers)
-    D=L[0]
-    for elt in L[1:]:
-        if elt==0:
-            raise ZeroDivisionError("can not divide by zero")
-        D/=elt
-    return D 
+    """Divides the first number by all subsequent numbers."""
+    if not numbers:
+        raise ValueError("Division requires at least one number.")
+    
+    result = numbers[0]
+    for num in numbers[1:]:
+        if num == 0:
+            raise ZeroDivisionError("Cannot divide by zero.")
+        result /= num
+    return result
 
 
 
