@@ -32,6 +32,7 @@ def divide(*numbers):
         if num == 0:
             raise ZeroDivisionError("Cannot divide by zero.")
         result /= num
+
     return result
 
 
