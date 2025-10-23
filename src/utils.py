@@ -1,5 +1,6 @@
 def add(*numbers):
     """Adds an unlimited number of parameters."""
+    print("Adding numbers:")
     return sum(numbers)
 
 def subtract(*numbers):
