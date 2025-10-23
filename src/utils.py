@@ -1,5 +1,6 @@
 def add(*numbers):
     """Adds an unlimited number of parameters."""
+    print("CRISTIANO_RONALDO")
     return sum(numbers)
 
 def subtract(*numbers):
@@ -31,6 +32,7 @@ def divide(*numbers):
         if num == 0:
             raise ZeroDivisionError("Cannot divide by zero.")
         result /= num
+
     return result
 
 
